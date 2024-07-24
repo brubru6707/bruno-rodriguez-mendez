@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+
+:root {
+	--color-1: #f72585;
+	--color-2: #7210b7;
+	--color-3: #3a0ca3;
+	--font-1: 'Be Vietnam Pro', sans-serif;
+	--reg-bor: 1px solid black;
+	--r-bor: 10px;
+}
+
+main {
+	margin-top: 50px;
+}
+
+section {
+	margin-top: 100px;
+}
+
+h2 {
+	font-size: x-large;
+	background-color: var(--color-1);
+	width: fit-content;
+	margin: auto;
+	padding: 5px;
+	border-radius: 7px;
+}
+
+h3 {
+	font-size: medium;
+}
+
+h4 {
+	font-size: small;
+}
+
+super {
+	color: var(--color-1);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+main {
+    height: 50vh;
+}
+
+main img {
+    width: 100px;
+}
+
+section{
+    height: fit-content;
+}
+
+*::selection {
+	background-color: var(--color-1);
+}
+
+body {
+	font-family: var(--font-1);
+	margin: 0px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px;
+}
+
+#page_opt {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+}
+
+#page_opt h4:hover {
+	color: var(--color-1)
+}
+
+.cur_page {
+	text-decoration: underline;
+}
+
+#preface {
+	width: 80vw;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 50px;
+	height: fit-content;
+	height: 15vw;
+	align-items: center;
+}
+
+#preface .left {
+	--pad: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: var(--pad);
+	height: fit-content;
+}
+
+#preface .left::before {
+	content: "A little about me"; 
+	position: relative;
+	top: calc(-2 * var(--pad));
+	left: 10px;
+	border: var(--reg-bor);
+	background-color: white;
+	z-index: 1;
+	border-radius: var(--r-bor);
+	padding: 10px;
+	color: var(--color-2);
+}
+
+#preface .right{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+}
+
+#preface .img_holder, #preface .img_holder::before {
+	position: relative;
+	border: 1px solid black;
+	background-repeat: no-repeat;
+	box-shadow: 5px 5px 0px var(--color-2);
+}
+
+#preface .img_holder{
+	background: url("/images/goat_holding.jpg");
+	background-size: 100% auto;
+	width: 40vw;
+	height: 15vw;
+	top: -50px;
+}
+
+#preface .img_holder::before {
+	content: "blank";
+	background: url("/images/kc_park.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	display: inline-block;
+	color: transparent;
+	width: 15vw;
+	height: 20vw;
+	top: 75px;
+	left: 20vw;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#projects {
+	margin: auto;
+	display: flex; 
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+#projects_hold h2 {
+	text-align: center;
+}
+
+.project {
+	--size: 30vw;
+	max-width: 300px;
+	max-height: 300px;
+	min-Width: 200px;
+	min-width: 200px;
+	width: var(--size);
+	height: var(--size);
+	margin: 10px;
+	border: var(--reg-bor);
+	border-radius: var(--r-bor);
+	padding: 10px;
+}
+
+.project h3 {
+	text-align: center;
+}
+
+.trim {
+    max-height: 30%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.trim img {
+    position: relative;
+    width: 100%;
+}
+
+#chessEngine {
+    top: -5vh;
+}
+
+#writingRobot {
+    top: -20vw;
+}
+
+#contemporaryGift {
+    top: -18vw;
+}
+
+#projects_hold li {
+	list-style-type: "> ";
+}
+
+#past_work_exps_hold h3, h2 {
+	text-align: center;
+}
+
+#past_work_exps {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.past_work_exp {
+	width: 90vw;
+	border-top: solid black 1px;
+	border-bottom: solid black 1px; 
+	margin-bottom: 50px;
+}
+
+.past_work_exp_content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 70vw;
+	margin: 15px;
+	grid-gap: 50px;
+
+}
+.past_work_exp_content_img_holder, .school_logo {
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.past_work_exp_content img {
+	width: 15vw;
+}
+
+.past_work_exp_content_desc {
+	margin: auto
+}
+
+.school_hold {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.school {
+	border: solid black 1px;
+	border-radius: 5px;
+	padding-left:10px;
+	margin-left: 20px;
+	box-shadow: 5px 5px 0px var(--color-3);
+	width: 30vw;
+}
+
+
+.school img{
+	width: 15vw;
+}
+
+.arrow {
+	height: fit-content;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.arrow .head{
+	--size: 5vh;
+	border-top: var(--size) solid transparent;
+	border-bottom: var(--size) solid transparent;
+	border-left: var(--size) solid var(--color-2);
+}
+
+.arrow .body {
+	width: 10vw;
+	background-color: var(--color-2);
+}
+
+#VAL .arrow .body{
+	width: 20vw;
+}
+
+#UF .arrow .body{
+	width: 30vw;
+}
+
+footer {
+	background-color: var(--color-1);
+	padding: 10px;	
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer li {
+	padding-top: 10px;
+	font-weight: bold;;
+}
